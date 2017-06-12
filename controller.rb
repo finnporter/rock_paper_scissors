@@ -14,8 +14,8 @@ get '/rules' do
   #erb(:rules)
 end
 
-get '/play/:hand1/:hand2' do
-  game = Game.new(params["hand1"], params["hand2"])
+get '/play/:player1/:player2' do
+  game = Game.new(params["player1"], params["player2"])
   @result = game.play
   erb(:play)
 end

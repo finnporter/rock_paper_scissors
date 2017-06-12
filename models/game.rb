@@ -1,8 +1,8 @@
 class Game
 
-  def initialize(hand1, hand2)
-    @hand1 = hand1
-    @hand2 = hand2
+  def initialize(player1, player2)
+    @player1 = player1
+    @player2 = player2
   end
 
   def rock_vs_scissors
@@ -34,23 +34,23 @@ class Game
   end
 
   def play
-    if @hand1 == "rock" && @hand2 == "scissors"
-      "Rock, you rock!"
-    elsif @hand1 == "scissors" && @hand2 == "rock"
-      "Rock, you rock!"
-    elsif @hand1 == "rock" && @hand2 == "paper"
-      "Paper rules!"
-    elsif @hand1 == "paper" && @hand2 == "rock"
-      "Paper rules!"
-    elsif @hand1 == "scissors" && @hand2 == "paper"
-      "Scissors wins!"
-    elsif @hand1 == "paper" && @hand2 == "scissors"
-      "Scissors wins"
-    elsif @hand1 == "rock" && @hand2 == "rock"
+    if @player1 == "rock" && @player2 == "scissors"
+      "Player1, you rock!"
+    elsif @player1 == "scissors" && @player2 == "rock"
+      "Player2, you rock!"
+    elsif @player1 == "rock" && @player2 == "paper"
+      "Player2's paper rules!"
+    elsif @player1 == "paper" && @player2 == "rock"
+      "Player1's paper rules!"
+    elsif @player1 == "scissors" && @player2 == "paper"
+      "Player1 wins!"
+    elsif @player1 == "paper" && @player2 == "scissors"
+      "Player2 wins"
+    elsif @player1 == "rock" && @player2 == "rock"
       "Draw!"
-    elsif @hand1 == "paper" && @hand2 == "paper"
+    elsif @player1 == "paper" && @player2 == "paper"
       "Draw!"
-    elsif @hand1 == "scissors" && @hand2 == "scissors"
+    elsif @player1 == "scissors" && @player2 == "scissors"
       "Draw!"
     else
       "You can only use rock, paper or scissors."
