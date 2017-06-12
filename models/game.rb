@@ -35,23 +35,23 @@ class Game
 
   def play
     if @hand1 == "rock" && @hand2 == "scissors"
-      rock_vs_scissors
+      "Rock, you rock!"
     elsif @hand1 == "scissors" && @hand2 == "rock"
-      scissors_vs_rock
+      "Rock, you rock!"
     elsif @hand1 == "rock" && @hand2 == "paper"
-      rock_vs_paper
+      "Paper rules!"
     elsif @hand1 == "paper" && @hand2 == "rock"
-      paper_vs_rock
+      "Paper rules!"
     elsif @hand1 == "scissors" && @hand2 == "paper"
-      scissors_vs_paper
+      "Scissors wins!"
     elsif @hand1 == "paper" && @hand2 == "scissors"
-      paper_vs_scissors
+      "Scissors wins"
     elsif @hand1 == "rock" && @hand2 == "rock"
-      draw
+      "Draw!"
     elsif @hand1 == "paper" && @hand2 == "paper"
-      draw
+      "Draw!"
     elsif @hand1 == "scissors" && @hand2 == "scissors"
-      draw
+      "Draw!"
     else
       "You can only use rock, paper or scissors."
     end
