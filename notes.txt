@@ -1,2 +1,0 @@
-how do I make parameters/arguments interchangeable? rock_vs_scissors/scissors_vs_rock
--> possibly, maybe converting the logic into one big if statement

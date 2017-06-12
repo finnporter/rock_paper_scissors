@@ -5,13 +5,11 @@ require 'pry-byebug'
 require_relative './models/game'
 
 get '/' do
-  #display something on homepage
-  #erb(:home)
+  erb(:home)
 end
 
 get '/rules' do
-  #display rules
-  #erb(:rules)
+  erb(:rules)
 end
 
 get '/play/:player1/:player2' do
